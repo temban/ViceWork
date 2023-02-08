@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grey1"
+    tools:context=".TopAddJob">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="555dp"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        tools:ignore="MissingConstraints">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="73dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewtopAddJob"
+                    android:background="@drawable/round"
+                    android:layout_width="230dp"
+                    android:layout_height="56dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/buttonlogoutAddJob"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/btt"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="4dp"
+                    android:text="LOGOUT" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round"
+                android:text="@string/add_a_new_job"
+                android:textSize="36sp"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/editTextTopJobName"
+                android:background="@drawable/round"
+                android:padding="10dp"
+                android:drawableLeft="@drawable/ic_baseline_work_24"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:textSize="18sp"
+                android:layout_marginTop="30dp"
+                android:hint="  Job Name"
+                android:inputType="textPersonName" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editTextTopStartDate"
+                    android:layout_width="223dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/round"
+                    android:padding="10dp"
+                    android:drawableLeft="@drawable/ic_baseline_calendar_today_24"
+                    android:layout_marginTop="20dp"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:enabled="false"
+                    android:hint="  Start Date"
+                    android:inputType="datetime" />
+
+                <ImageView
+                    android:id="@+id/imageViewTopdatepicker"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editTextTopNumberJobPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round"
+                android:padding="10dp"
+                android:drawableLeft="@drawable/ic_baseline_monetization_on_24"
+                android:layout_marginTop="15dp"
+                android:textSize="18sp"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="  Payment"
+                android:inputType="number" />
+
+            <Spinner
+                android:id="@+id/TopamountPer"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/round"
+                android:drawableLeft="@drawable/ic_baseline_account_circle_24"
+                android:padding="10dp"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editTextTopNumberPeopleNeeded"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textSize="18sp"
+                android:background="@drawable/round"
+                android:padding="10dp"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="  Number Of People Needed"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/editTextTopNumberPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textSize="18sp"
+                android:background="@drawable/round"
+                android:padding="10dp"
+                android:drawableLeft="@drawable/ic_baseline_phone_android_24"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="  Phone Number"
+                android:inputType="number" />
+            <Button
+                android:id="@+id/btnTopAdd"
+                android:layout_width="200dp"
+                android:layout_gravity="center"
+                android:background="@drawable/btt"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/add" />
+
+
+        </LinearLayout>
+    </ScrollView>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="399dp"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btnToprefresh"
+            android:layout_width="55dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/ic_baseline_refresh_24" />
+
+        <Button
+            android:id="@+id/home"
+            android:layout_width="55dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/ic_baseline_home_24" />
+
+        <Button
+            android:id="@+id/account"
+            android:layout_width="55dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/ic_baseline_account_circle_24" />
+
+        <Button
+            android:id="@+id/LOGOUTSearchJob"
+            android:layout_width="55dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/ic_baseline_next_plan_24" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
